@@ -3,6 +3,12 @@ import time
 import json
 
 
-output = [{"endpoint": "monitor-test-centos", "tags": "", "timestamp": int(time.time()), "metric": "agent.cpu", "value": 1.8, "counterType": "GAUGE", "step": 60}]
+output = [{"endpoint": "si-plug",
+           "metric": "agent.plug",
+           "tags": "",
+           "timestamp": int(time.time()),
+           "value": 1.6,
+           "counterType": "GAUGE",
+           "step": 60}]
 
 print  json.dumps(output)
